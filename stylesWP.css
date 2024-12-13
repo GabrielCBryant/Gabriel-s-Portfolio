@@ -130,7 +130,7 @@ html {
 
 .projectLinks {
     display: flex;
-    gap: 20px; /* Spacing between boxes */
+    gap: 100px; /* Spacing between boxes */
     justify-content: center; /* Center content */
 }
 
