@@ -115,7 +115,7 @@ html {
 .projSection{
     top: 100vh;
     height: 200vh;
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.527);
     margin-top: 152vh;
 }
 
