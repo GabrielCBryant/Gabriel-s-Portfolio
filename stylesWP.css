@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 400vh;
+    height: 430vh;
     background: black;
     color: gray;
     font-family: Georgia, serif;
@@ -112,7 +112,65 @@ html {
     scroll-behavior: smooth;
 }
 
+.projSection{
+    top: 100vh;
+    height: 200vh;
+    background-color: green;
+    margin-top: 152vh;
+}
 
+.myProject{
+    color: white; /* Set text color */
+    text-decoration: underline;
+    text-align: center; /* Center text horizontally */
+    transform: translateY(40px);
+    font-size: 68px;
+    
+}
+
+.projectLinks {
+    display: flex;
+    gap: 20px; /* Spacing between boxes */
+    justify-content: center; /* Center content */
+}
+
+.projectBox {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px; /* Adjust width */
+    transition: transform 0.2s, background-color 0.2s;
+    transform: translateY(80px);
+    height: 550px;
+    font-size: 70px;
+}
+
+.projectBox:hover {
+    background-color: #ddd; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.boxContent h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.boxContent p {
+    font-size: 14px;
+    color: gray;
+}
+
+.computerImage{
+    transform: translateY(37px);
+}
+
+.signatureInitial{
+    transform: translateY(37px);
+}
 
 .bottomImage {
     position: fixed; /* Keeps the image at the bottom even during scrolling */
