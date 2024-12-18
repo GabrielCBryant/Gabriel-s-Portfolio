@@ -60,4 +60,10 @@ h1{
     30% {transform: rotate(var(--s,90deg))}
     70% {transform: rotate(0)}
 }
+@media screen and (max-width: 768px){
+    .homeButton{
+        left: 80%;
+    }
+}
+
   
