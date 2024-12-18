@@ -110,3 +110,17 @@ body{
     border-radius: 10px; /* Rounded corners */
     object-fit: cover; /* Ensures images fill their container */
 }
+@media screen and (max-width: 768px){
+    header{
+        font-size: 90%;
+        transform:translateY(30%);
+    }
+    .homeButton{
+        left: 5%;
+        transform: translateY(-190%);
+    }
+    .summaryBox{
+        width: 90%;
+        left: 3%;
+    }
+}
