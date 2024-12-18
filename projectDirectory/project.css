@@ -1,0 +1,112 @@
+header{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: rgba(0, 128, 0, 0.527);
+    font-size: 40px;
+    margin-top: -54px;
+    display: flex;
+    justify-content: center; /* Center the "Title" */
+    align-items: center;
+    position: relative; /* Allows absolute positioning of children */
+    height: 180px; /* Set header height */
+    transform: translateY(40px);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.homeButton{
+    width: 85px;
+    height: 35px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 22px;
+    left: 80px;
+    position: absolute;
+    justify-content: center;
+    transform: translateY(-40px);
+    color: black;
+
+    display: flex; /* Flexbox to align content */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    border: 1px solid black; /* Ensure border visibility */
+}
+.homeButton:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 300vh; /* Match the new container height */
+    background: black;
+    color: gray;
+    font-family: Georgia, serif;
+    overflow-y: auto; /* Keep scroll behavior if needed */
+    align-items: center;
+    justify-content: center;
+}
+
+.summaryBox {
+    width: 1100px;
+    background-color: white;
+    position: relative;
+    margin-top: 180px;
+    border-radius: 20px;
+    left: 380px;
+    border: 5px solid rgba(0, 128, 0, 0.527);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    padding: 20px; /* Space inside the box */
+    box-sizing: border-box; /* Include padding and border in the width */
+    
+
+    word-wrap: break-word; /* Wrap long words */
+    overflow-wrap: break-word; /* Ensures compatibility */
+}
+
+
+.summTitle{
+    color: black;
+    font-size: 40px;
+    text-decoration: underline;
+    justify-self: center;
+}
+
+.imageSection{
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+    justify-self: center;
+    
+
+}
+
+.imagesList {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Adds spacing around the grid */
+    justify-content: center; /* Centers the grid items horizontally */
+    align-items: center; /* Aligns items vertically (optional) */
+}
+
+.imagesList img {
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Ensures images fill their container */
+}
